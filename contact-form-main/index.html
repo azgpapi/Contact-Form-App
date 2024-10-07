@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <div id="place"></div>
+    <div class="container" id="container">
+      <header><h1>Contact Us</h1></header>
+      <div class="name-container">
+        <div class="fname-container">
+          <label for="fName">First Name*</label>
+          <input type="text" name="fName" id="fName" />
+          <p id="nameF"></p>
+        </div>
+        <div class="lname-container">
+          <label for="lName">Last Name*</label>
+          <input type="text" name="lName" id="lName" />
+          <p id="nameL"></p>
+        </div>
+      </div>
+      <div class="email-address">
+        <label for="email">Email*</label>
+        <input type="email" name="email" id="email" />
+        <p id="eError"></p>
+      </div>
+
+      <div class="queryType">
+        <label>Query Type *</label>
+        <div class="query-type-cont" id="query">
+          <div class="general">
+            <input type="radio" name="queryType" id="general" />
+            <label for="general">General Enquiry</label>
+          </div>
+          <div class="support">
+            <input type="radio" name="queryType" id="support" />
+            <label for="support">Support Request</label>
+          </div>
+        </div>
+        <p id="qError"></p>
+      </div>
+      <div class="message">
+        <label for="message">Message*</label>
+        <textarea name="message" id="message"></textarea>
+        <p id="mError"></p>
+      </div>
+      <div class="agree">
+        <input type="checkbox" id="consent" />
+        <p>I consent to being contacted by the team *</p>
+        <p id="cError"></p>
+      </div>
+      <button id="btn" class="btn">Submit</button>
+    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io?ref=challenge">azgpapi</a>.
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

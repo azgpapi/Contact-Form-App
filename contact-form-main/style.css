@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: hsl(148, 38%, 91%)
+}
+
+.container{
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 70%;
+    margin-bottom: 30px;
+}
+.name-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fname-container,
+.lname-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.lname-container{
+    margin-left: 20px;
+}
+
+label{
+    opacity: 70%;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+input{
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+input:focus{
+    border-color:  hsl(169, 82%, 27%);
+}
+
+.email-address{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+.queryType {
+    display: flex;
+    flex-direction: column;
+}
+
+.query-type-cont {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.general,
+.support {
+    position: relative;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    display: inline-block;
+}
+.support{
+    margin-left: 20px;
+}
+
+.general input,
+.support input {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.general label,
+.support label {
+    margin-left: 50px;
+    font-size: 16px;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+.message textarea{
+    resize: none;
+    height: 100px;
+    border-radius: 5px;
+    outline: none;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid #ccc;
+}
+.message textarea:focus{
+    border-color: hsl(169, 82%, 27%);
+}
+
+
+.agree p:first-of-type{
+    display: inline;
+    margin-left: 30px;
+    opacity: 50%;
+}
+
+button{
+    margin: 20px auto;
+    background-color: hsl(169, 82%, 27%);
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+button:hover{
+    background-color: rgb(140, 238, 140);
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 560px)  {
+    .name-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .fname-container{
+        width: 100%;
+    }
+    .lname-container{
+        margin-left:0;
+        width: 100%;
+    }
+    .query-type-cont{
+        display: flex;
+        flex-direction: column;
+    }
+    .general{
+        width: 100%;
+    }
+    .support{
+        margin-left:0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+}
